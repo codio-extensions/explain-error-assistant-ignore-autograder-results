@@ -1,4 +1,5 @@
 # custom-assistant-example-error-augmentation
+## with tooltip configuration, context filtering and passing multiple student files as context
 This assistant example is designed to explain student programming error messages.
 
 Additional features:
