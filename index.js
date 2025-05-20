@@ -26,13 +26,13 @@ multiline code with \`\`\`
     // Once all these conditions have been met, only then we'll show the I can explain this error tooltip  
     if ((isError) && (error.length > 0) && (!error.includes("npm notice"))) {
       codioIDE.coachBot.showTooltip("I can help explain this error...", () => {
-        codioIDE.coachBot.open({id: "errorAugmentButton", params: "tooltip"})
+        codioIDE.coachBot.open({id: "eCornellErrorAugmentButton", params: "tooltip"})
       })
     }
   })
 
   // register(id: unique button id, name: name of button visible in Coach, function: function to call when button is clicked) 
-  codioIDE.coachBot.register("eCornellErrorAugmentButton", "Testing eCornell Special Error Explanation", onButtonPress)
+  codioIDE.coachBot.register("eCornellErrorAugmentButton", "Explain this error!", onButtonPress)
 
   async function onButtonPress(params) {
     // Function that automatically collects all available context 
