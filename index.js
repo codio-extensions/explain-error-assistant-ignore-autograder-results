@@ -24,7 +24,7 @@ multiline code with \`\`\`
     // 2. is there any error text (make sure it is not empty, which might be the case with autograder feedback)
     // 3. does the error text contain any update available messages? (so that we can ignore npm updates)
     // Once all these conditions have been met, only then we'll show the I can explain this error tooltip  
-    if ((isError) && (error.length > 0) && (!error.includes("Update available"))) {
+    if ((isError) && (error.length > 0) && (!error.includes("npm notice"))) {
       codioIDE.coachBot.showTooltip("I can help explain this error...", () => {
         codioIDE.coachBot.open({id: "errorAugmentButton", params: "tooltip"})
       })
